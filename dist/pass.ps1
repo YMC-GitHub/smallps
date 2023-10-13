@@ -306,8 +306,49 @@ function html_comment_unwrap(){
 }
 
 
+
+
+
 $cmds = $cmd -split ","
 # $nss = $ns -split ","
+
+if(oneof "-h,--help,help" $cmds){
+    $usage=@"
+pass.ps1 v1.0.0 - encode string for your password or something copyright zero.com
+Usage: .\pass.ps1 <cmd> <option>
+
+Cmd:
+version -- get this program version
+help -- get this program help usage
+
+Option:
+-sslf [ssltext] -- optional,custom how to encode your text
+-file [location] -- optional,input -sslf value from file
+-save [location] -- optional,enable and save result to file
+
+
+ssltext: (ps: name:anytexthere,email:anytexthere,site:anytexthere;method:sha512,cut:8,end:!,upper-start:3)
+name:anytexthere,email:anytexthere,site:anytexthere -- requires, the text to be encode, your can set any text here, not must to be name,email,key
+method:sha512 -- optional, use the method to make hash, default is sha512
+cut:8 -- optional, cut the hash from 0 to  the length, default is 8
+end:! --  optional, end the hash with the value,default is "!"
+upper-start:3 -- optional, upper case from 0 to  the length, default is 3
+
+Demo:
+.\pass.ps1 version
+.\pass.ps1 help
+.\pass.ps1 -sslf "name:anytexthere,email:anytexthere,site:anytexthere;method:sha512,cut:8,end:!,upper-start:3"
+.\pass.ps1 -file secret\password.md -save .\secret\password.md
+
+"@
+    "$usage"
+    exit 
+}
+
+if(oneof "-v,--version,version" $cmds){
+    "pass.ps1 v1.0.0"
+    exit
+}
 
 
 $txt_samples="any text here!you can oranize it by yourself!"
