@@ -57,3 +57,10 @@ saved_model/**/* filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 *.webp filter=lfs diff=lfs merge=lfs -text
+
+# set *.ps1 and other as powershell file for powershell project
+*.ps1 linguist-language=powershell
+*.md linguist-language=powershell
+*.html linguist-language=powershell
+*.css linguist-language=powershell
+*.js linguist-language=powershell
