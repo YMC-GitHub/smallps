@@ -110,3 +110,7 @@ $value="max_split_size_mb:30"
 
 ## Plans
 - build powershell script from source dir (ps: src) to outdir (ps:dist)
+
+## powershell trending in github
+
+[trending powershell in github](https://github.com/trending/powershell)
