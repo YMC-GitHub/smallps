@@ -74,6 +74,7 @@ git add LICENSE ; git commit -m "build(core): add license";
 ```bash
 git add README.md ; git commit -m "docs(core): add readme";
 git add README.md ; git commit -m "docs(core): put readme to update pass.p1 usegae";
+git add README.md ; git commit -m "docs(core): put readme to update ps1 usage";
 ```
 
 - [x] set gitattributes and commit it
@@ -146,10 +147,13 @@ git add go.mod go.sum go.work.sum;git commit -m "build(core): add mod and worksp
 git add src/chapter01/higo;git commit -m "build(core): add mod chapter01";
 ```
 
-- [x] add powershell program pass.ps1
+- [x] add powershell program
 ```bash
 git add dist/pass.ps1 ; git commit -m "feat(core): add program to encode string for your password or something";
 git add dist/pass.ps1 ; git commit -m "feat(core): put program to enale help and version";
+
+git add dist/edit-env-path.ps1 ; git commit -m "feat(core): add program to set or get env path value";
+git add dist/edit-env.ps1 ; git commit -m "feat(core): add program to set or get env value";
 ```
 
 
