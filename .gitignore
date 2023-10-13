@@ -1,0 +1,15 @@
+
+# s: set gitignore for nodejs
+# refer:https://github.com/github/gitignore/blob/main/Node.gitignore
+# e: set gitignore for nodejs
+
+# s: set gitignore for zero
+# ignore tmp files
+*.tmp.*
+
+# ignore secret data
+secret
+
+# ignore project vscode editor config
+# .vscode
+# e: set gitignore for zero
