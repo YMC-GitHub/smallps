@@ -12,7 +12,7 @@ yemiancheng|<ymc.github@gmail.com>|code maintainers|
 
 GPL
 
-## List tiny programs in dist
+## List tiny programs in scripts
 
 - pass.ps1 -- encode string for your password or something.
 - edit-env-path.ps1 -- get env path or add value to env path or del in it
@@ -22,13 +22,13 @@ GPL
 
 - [x] download pass.ps1 from github repo (bash)
 ```bash
-curl -sfLO https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/smallps/main/dist/pass.ps1
+curl -sfLO https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/smallps/main/scripts/pass.ps1
 ```
 
 - [x] download pass.ps1 from github repo (powershell)
 ```powershell
 # $url="www.baidu.com";irm $url -outfile '.\baidu.com';
-$url="https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/smallps/main/dist/pass.ps1";irm $url -outfile '.\pass.ps1';
+$url="https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/smallps/main/scripts/pass.ps1";irm $url -outfile '.\pass.ps1';
 
 # (New-Object System.Net.WebClient).DownloadFile($url, '.\pass.ps1')
 # Invoke-WebRequest -OutFile '.\pass.ps1' -Uri $url -UseBasicParsing
@@ -76,7 +76,7 @@ set-content -path .\secret\password.md -value "$ssll"
 
 - [x] download edit-env-path.ps1.ps1 from github repo (powershell)
 ```powershell
-$url="https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/smallps/main/dist/edit-env-path.ps1";irm $url -outfile '.\edit-env-path.ps1';
+$url="https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/smallps/main/scripts/edit-env-path.ps1";irm $url -outfile '.\edit-env-path.ps1';
 ```
 
 - [x] get env path or add value to env path or del in it
@@ -90,7 +90,7 @@ $value="C:\Program Files (x86)\Internet Download Manager\"
 
 - [x] download edit-env.ps1.ps1 from github repo (powershell)
 ```powershell
-$url="https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/smallps/main/dist/edit-env.ps1";irm $url -outfile '.\edit-env.ps1';
+$url="https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/smallps/main/scripts/edit-env.ps1";irm $url -outfile '.\edit-env.ps1';
 ```
 
 - [x] get env value or add value to env or del it
@@ -109,7 +109,7 @@ $value="max_split_size_mb:30"
 
 
 ## Plans
-- build powershell script from source dir (ps: src) to outdir (ps:dist)
+- build powershell script from source dir (ps: src) to outdir (ps:scripts)
 
 ## powershell trending in github
 
