@@ -15,7 +15,8 @@ GPL
 ## List tiny programs in dist
 
 - pass.ps1 -- encode string for your password or something.
-
+- edit-env-path.ps1 -- get env path or add value to env path or del in it
+- edit-env.ps1 -- get env value or add value to env or del it
 
 ## Demo to use tiny programs
 
@@ -72,6 +73,40 @@ set-content -path .\secret\password.md -value "$ssll"
 ```powershell
 .\pass.ps1 -file secret\password.md -save .\secret\password.md
 ```
+
+- [x] download edit-env-path.ps1.ps1 from github repo (powershell)
+```powershell
+$url="https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/smallps/main/dist/edit-env-path.ps1";irm $url -outfile '.\edit-env-path.ps1';
+```
+
+- [x] get env path or add value to env path or del in it
+```powershell
+$value="C:\Program Files (x86)\Internet Download Manager\"
+.\edit-env-path.ps1 get
+.\edit-env-path.ps1 del -value $value
+.\edit-env-path.ps1 add -value $value
+```
+
+
+- [x] download edit-env.ps1.ps1 from github repo (powershell)
+```powershell
+$url="https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/smallps/main/dist/edit-env.ps1";irm $url -outfile '.\edit-env.ps1';
+```
+
+- [x] get env value or add value to env or del it
+```powershell
+$envkey="PYTORCH_CUDA_ALLOC_CONF"
+$value="max_split_size_mb:30"
+.\edit-env.ps1 get -envkey $envkey
+.\edit-env.ps1 set -envkey $envkey
+.\edit-env.ps1 set -envkey $envkey -value $value
+
+.\edit-env.ps1 get -envkey "PYTORCH_CUDA_ALLOC_CONF"
+.\edit-env.ps1 set -envkey "PYTORCH_CUDA_ALLOC_CONF" -value "max_split_size_mb:30"
+.\edit-env.ps1 set -envkey "PYTORCH_CUDA_ALLOC_CONF" -value "max_split_size_mb:128"
+.\edit-env.ps1 set -envkey "PYTORCH_CUDA_ALLOC_CONF" -value ""
+```
+
 
 ## Plans
 - build powershell script from source dir (ps: src) to outdir (ps:dist)
