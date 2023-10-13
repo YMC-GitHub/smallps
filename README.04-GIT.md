@@ -80,6 +80,8 @@ git add README.md ; git commit -m "docs(core): put readme to update ps1 usage";
 - [x] set gitattributes and commit it
 ```bash
 git add .gitattributes ; git commit -m "build(core): add gitattributes to manage large files";
+
+git add .gitattributes ; git commit -m "build(core): set language type displayed by repository repo";
 ```
 
 
