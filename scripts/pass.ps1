@@ -1,4 +1,17 @@
 
+<#
+.SYNOPSIS
+    encode text data
+.DESCRIPTION
+    This PowerShell script encode string for your password or something.
+.EXAMPLE
+    PS> ./pass.ps1 -sslf "name:anytexthere,email:anytexthere,site:anytexthere;method:sha512,cut:8,end:!,upper-start:3"
+.LINK
+    https://github.com/ymc-github/smallps
+.NOTES
+    Author: yemiancheng | License: MIT
+#>
+
 # bind cli args to script
 [CmdletBinding()]
 param ( 
