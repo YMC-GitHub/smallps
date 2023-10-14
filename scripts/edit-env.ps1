@@ -1,3 +1,16 @@
+<#
+.SYNOPSIS
+    get env value or add value to env or del it
+.DESCRIPTION
+    This PowerShell script to get env value or add value to env or del it.
+.EXAMPLE
+    PS> ./edit-env.ps1
+.LINK
+    https://github.com/ymc-github/smallps
+.NOTES
+    Author: yemiancheng | License: MIT
+#>
+
 [CmdletBinding()]
 param ( 
     [Parameter(Position = 0)][string]$cmd = "add",
