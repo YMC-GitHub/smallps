@@ -114,3 +114,6 @@ $value="max_split_size_mb:30"
 ## powershell trending in github
 
 [trending powershell in github](https://github.com/trending/powershell)
+
+- [fleschutz/PowerShell](https://github.com/fleschutz/PowerShell) -- includes 500+ useful cross-platform PowerShell scripts
+- [MScholtes/PS2EXE](https://github.com/MScholtes/PS2EXE) -- convert ps1 to exe
