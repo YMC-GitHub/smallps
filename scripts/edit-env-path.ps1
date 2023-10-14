@@ -1,3 +1,16 @@
+<#
+.SYNOPSIS
+    get env path or add value to env path or del in it
+.DESCRIPTION
+    This PowerShell script get env path or add value to env path or del in it.
+.EXAMPLE
+    PS> ./list-user-groups.ps1
+.LINK
+    https://github.com/ymc-github/smallps
+.NOTES
+    Author: yemiancheng | License: MIT
+#>
+
 [CmdletBinding()]
 param ( 
     [Parameter(Position = 0)][string]$cmd = "add",
