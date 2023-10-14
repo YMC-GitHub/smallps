@@ -1,3 +1,13 @@
+# s: set *.ps1 and other as powershell file for powershell project
+# disable other with linguist-detectable for ps1
+*.ps1 linguist-language=Powershell
+*.md linguist-detectable=false
+*.py linguist-detectable=false
+*.html linguist-detectable=false
+*.js linguist-detectable=false
+*.css linguist-detectable=false
+# s: set *.ps1 and other as powershell file for powershell project
+
 # refer:
 # https://huggingface.co/guoyww/animatediff/blob/main/.gitattributes
 # https://huggingface.co/datasets/hdparmar/itt_specdata/blob/main/.gitattributes
@@ -57,13 +67,3 @@ saved_model/**/* filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 *.webp filter=lfs diff=lfs merge=lfs -text
-
-# s: set *.ps1 and other as powershell file for powershell project
-# disable other with linguist-detectable for ps1
-*.ps1 linguist-language=powershell
-*.md linguist-detectable=false
-*.py linguist-detectable=false
-*.html linguist-detectable=false
-*.js linguist-detectable=false
-*.css linguist-detectable=false
-# s: set *.ps1 and other as powershell file for powershell project
