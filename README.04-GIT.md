@@ -75,6 +75,8 @@ git add LICENSE ; git commit -m "build(core): add license";
 git add README.md ; git commit -m "docs(core): add readme";
 git add README.md ; git commit -m "docs(core): put readme to update pass.p1 usegae";
 git add README.md ; git commit -m "docs(core): put readme to update ps1 usage";
+git add README.md ; git commit -m "docs(core): put readme to note powershell trending in github";
+
 ```
 
 - [x] set gitattributes and commit it
@@ -82,8 +84,13 @@ git add README.md ; git commit -m "docs(core): put readme to update ps1 usage";
 git add .gitattributes ; git commit -m "build(core): add gitattributes to manage large files";
 
 git add .gitattributes ; git commit -m "build(core): set language type displayed by repository repo";
+
+git add .gitattributes ; git commit -m "build(core): disable other with linguist-detectable for ps1";
 ```
 
+[refer:1 changing-your-repo-s-language-in-github](https://dev.to/katkelly/changing-your-repo-s-language-in-github-5gjo)
+
+[refer:2 linguist in github](https://github.com/github-linguist/linguist)
 
 - [ ] get time with format
 ```bash
@@ -270,3 +277,25 @@ git add requirements.txt ; git commit -m "build(core): add requirements nodes";
 git add __init__.py YMC_Node_Suite.py; git commit -m "feat(core): add custom nodes";
 ```
 
+- [x] move *.ps1 from dist to scripts
+```bash
+git mv dist scripts
+git add scripts ; git commit -m "refactor(core): build powershell script files to here";
+git add README.md ; git commit -m "docs(core): build powershell script files to here";
+```
+
+- [x] enalbe get-help for *.ps1
+```powershell
+# get-help get-item -online 
+# get-help scripts\pass.ps1
+# get-help scripts\edit-env.ps1
+git add scripts/pass.ps1 ; git commit -m "feat(core): enalbe get-help for pass.ps1";
+git add scripts/edit-env.ps1 ; git commit -m "feat(core): enalbe get-help for pass.ps1";
+git add scripts/edit-env-path.ps1 ; git commit -m "feat(core): enalbe get-help for this ps1";
+```
+
+- [x] add go powershell snippets in project level
+```bash
+git add .vscode/.gitignore;git commit -m "build(core): add ps1 code snippets in project level";
+git add .vscode/powershell.code-snippets;git commit -m "docs(core): add ps1 code snippets";
+```
